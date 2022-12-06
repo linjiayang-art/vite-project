@@ -1,7 +1,8 @@
 export interface UserState{
     token:string;
     name:string;
-    avater:string;
+    avatar:string;
+    introduction:string;
     //roles: string[];
    // perms: string[];
 }

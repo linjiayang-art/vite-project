@@ -1,20 +1,39 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import SvgIcon from '@/components/SvgIcon/index.vue';
+import SvgIcon from '@/components/SvgIcon/index.vue'
 
-import useStore from "@/store";
+import useStore from "@/store"
+import {getUserInfo} from '@/api/user'
+import { dataType } from 'Element-plus/es/components/table-v2/src/common';
+import { ElMessage } from 'Element-plus';
 
 const { user } = useStore()
+
+var data=ref()
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+function getmyUserInfo(){
+        user.test();
+       // user.getUserInfo();
+        ElMessage({
+    message: 'Congrats, this is a success message.',
+    type: 'success',
+  })
+  console.log(user)
+}
+ 
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
-  <h1>{{ user.name }}</h1>
+
+  <button type="button" @click="getmyUserInfo()" >测试测试</button>
+
+  <h1>{{ user.name }} store 数据</h1>
   <svg-icon icon-class="menu"/>
 
   <div class="card">
