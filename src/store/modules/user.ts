@@ -17,9 +17,6 @@ const useUserStore=defineStore({
          /**
      *  获取用户信息（昵称、头像、角色集合、权限集合）
      */
-    test(){
-      this.name="hello"
-    },
     getUserInfo() {
       return new Promise((resolve, reject) => {
         getUserInfo()

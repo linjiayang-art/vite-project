@@ -24,7 +24,7 @@ export default ({command, mode}: ConfigEnv): UserConfig => {
           server: {
               host: 'localhost', 
               port: Number(env.VITE_APP_PORT), 
-              open: false, // 启动是否自动打开浏览器
+              open: true, // 启动是否自动打开浏览器
               proxy: {
                   [env.VITE_APP_BASE_API]: { 
                       target: 'localhost', // 跨域接口

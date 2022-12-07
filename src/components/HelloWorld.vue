@@ -16,8 +16,7 @@ defineProps<{ msg: string }>()
 const count = ref(0)
 
 function getmyUserInfo(){
-        user.test();
-       // user.getUserInfo();
+        user.getUserInfo();
         ElMessage({
     message: 'Congrats, this is a success message.',
     type: 'success',
@@ -33,7 +32,7 @@ function getmyUserInfo(){
 
   <button type="button" @click="getmyUserInfo()" >测试测试</button>
 
-  <h1>{{ user.name }} store 数据</h1>
+  <h1>{{ user.name }} store 数据1111</h1>
   <svg-icon icon-class="menu"/>
 
   <div class="card">

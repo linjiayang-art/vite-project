@@ -9,9 +9,12 @@ import { createPinia } from "pinia"
 
 //icon
 import 'virtual:svg-icons-register'
+//router
+import router  from '@/router'
 
 const app = createApp(App)
 
 app.use(ElementPlus)
     .use(createPinia())
+    .use(router)
     .mount('#app')
