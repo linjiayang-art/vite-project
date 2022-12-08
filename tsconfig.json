@@ -2,12 +2,14 @@
   "compilerOptions": {
     //
     "types": ["vite-plugin-svg-icons/client"],
+    
     //
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "strict": true,
+    "sourceMap":  true,
     "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,

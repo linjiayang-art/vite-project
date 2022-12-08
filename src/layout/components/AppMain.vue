@@ -1,4 +1,5 @@
 <template>
+
     <section class="app-main">
       <router-view v-slot="{ Component, route }">
         <transition name="router-fade" mode="out-in">
@@ -52,4 +53,3 @@
     }
   }
   </style>
-  

@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
-import { ElMessage, ElMessageBox } from "Element-plus";
+import { ElMessage, ElMessageBox } from "element-plus";
 import { localStorage } from "@/utils/storage";
 
 //创建一个实例
